@@ -1,0 +1,207 @@
+@font-face {
+    font-family: 'RobotoFlex';
+    src: url("assets/fonts/Roboto_Flex/RobotoFlex-VariableFont_GRAD\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'RobotoFlex';
+    src: url("assets/fonts/RobotoRegular.ttf");
+    font-weight: 400;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'RobotoFlex', sans-serif;
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #4d2323;
+    background: grey;
+}
+
+a {
+    text-decoration: none;
+    color: #4d2323
+}
+
+a:hover {
+    text-transform: uppercase;
+}
+
+/*------------ Header-----------*/
+
+.container {
+    margin: auto;
+    max-width: 1440px;
+    box-shadow: 0 0 20px black;
+    background: white;
+}
+
+.header-container {
+    height: 60px;
+    margin: 15px auto;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 0 0 20px black;
+    padding-left: 80px;
+    background: white;
+
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+    margin: 16px 0;
+}
+
+.nav-link {
+    padding: 0 30px;
+    line-height: 50px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav-list a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-list a:hover {
+    color: #350404;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 30px 80px 80px;
+    min-width: 0;
+}
+
+.section {
+    width: 50%;
+    margin-top: 20px;
+}
+
+.section--update {
+    padding-left: 100px;
+}
+
+.kurs_list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.section-courses {
+    width: 45%;
+}
+
+
+
+@media (max-width: 990px) {
+    .section {
+        width: 100%;
+    }
+}
+
+.foto {
+    width: 350px;
+    height: 400px;
+    box-shadow: inset 0px 0 30px rgb(103 87 85);
+}
+
+/*----------------Footer-------------*/
+
+.footer-container {
+    margin: 16px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(29, 23, 23, 0.801);
+    padding-left: 80px;
+}
+
+.footer-list {
+    color: rgba(32, 27, 27, 0.801);
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.fa {
+    padding: 10px;
+    color: rgb(15, 46, 13);
+}
+
+.github {
+    background: url(assets/svg/github.svg) no-repeat;
+    background-size: contain;
+    height: 50px;
+    width: 70px;
+
+}
+
+/* Слайдер Swiper */
+
+.certificates__content {
+    max-width: 1300px;
+    width: 100%;
+}
+
+.image-slider {
+    padding: 50px 0 70px 0;
+    min-width: none;
+}
+
+.image-slider__image {
+    text-align: center;
+}
+
+.image-slider__image img {
+    max-width: 68%;
+}
+
+/* Стрелки */
+
+.image-slider .swiper-button-prev::after,
+.image-slider .swiper-button-next::after {
+    color: #4d2323;
+    font-size: 70px;
+}
+
+/* Пагинация */
+
+.image-slider .swiper-pagination {
+    bottom: 0;
+}
+
+/* Буллеты */
+
+.image-slider .swiper-pagination-bullet {
+
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    background-color: #4d2323;
+}
+
+
+
+/* finish */
