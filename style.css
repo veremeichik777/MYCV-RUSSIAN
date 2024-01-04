@@ -150,13 +150,39 @@ html {
 }
 
 .github {
-    background: url(assets/svg/github.svg) no-repeat;
+    background: url(assets/svg/logo_rs_text.svg) no-repeat;
     background-size: contain;
     height: 50px;
     width: 70px;
 
 }
 
+.link-courses {
+    text-decoration: none;
+    color: #4d2323;
+    transition: color 0.9s, text-shadow 0.6s;
+}
+
+.link-courses:hover {
+    color: #544040;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    color: rgb(84, 67, 92);;
+box-shadow: 0 5px 0 0 #4c1717;
+}
+
+.my-contacts {
+    text-decoration: none;
+      
+      color: #4d2323;
+      position: relative;
+      transition: color 0.3s, box-shadow 0.3s;
+}
+
+.my-contacts:hover {
+    color: #510a0a;
+    font-weight: bold;
+      text-shadow: 0 2px 4px rgba(32, 116, 160, 0.8);
+}
 /* Слайдер Swiper */
 
 .certificates__content {
@@ -201,7 +227,6 @@ html {
     font-size: 14px;
     background-color: #4d2323;
 }
-
 
 
 /* finish */
