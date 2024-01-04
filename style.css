@@ -84,6 +84,8 @@ html {
 
 .nav-list a:hover {
     color: #350404;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(5, 26, 37, 0.8);
 }
 
 .main-container {
