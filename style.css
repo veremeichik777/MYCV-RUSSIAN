@@ -122,6 +122,11 @@ a:hover {
     background-color: #ffff;
 }
 
+.header.open .nav-link {
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+}
+
 
 .nav-list {
     display: flex;
