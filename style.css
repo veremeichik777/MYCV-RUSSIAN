@@ -188,9 +188,22 @@ html {
 }
 
 @media (max-width: 1265px) {
+    
+    
+
+    .body-wraper {
+        font-size: 60%;
+    }
+    
+}
+
+
+
+@media (max-width: 918px) {
 
     .header__burger-btn {
         display: block;
+
     }
 
     .nav{
@@ -229,17 +242,14 @@ html {
     width: 100%
     }
 
-    .nav-item {                     /* menu-item */
-        
-    }
 
 }             
 
-@media (max-width: 990px) {
+/* @media (max-width: 990px) {
     .section {
         width: 100%;
     }
-}
+} */
 
 .foto {
     width: 350px;
