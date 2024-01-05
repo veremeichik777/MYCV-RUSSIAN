@@ -28,6 +28,12 @@ body {
     background: grey;
 }
 
+.body-wraper{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
 a {
     text-decoration: none;
     color: #4d2323
@@ -51,10 +57,71 @@ a:hover {
     margin: 15px auto;
     background-color: rgba(0, 0, 0, 0);
     box-shadow: 0 0 20px black;
-    padding-left: 80px;
     background: white;
+    position: relative;
+    
+}
+
+.header__burger-btn {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    z-index: 2;
+    cursor: pointer;
 
 }
+
+.header__burger-btn span {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    left:5px;
+    background-color: black;
+    display: block;
+    transition: background-color .3s, opacity .3s, transform .5s;
+    will-change: transform;
+}
+
+.header__burger-btn:hover span {
+    background-color: rgb(103 103 103);
+}
+
+.header__burger-btn span:nth-child(1) {
+    
+    transform: translateY(-10px);
+}
+
+.header__burger-btn span:nth-child(2) {
+   
+}
+
+.header__burger-btn span:nth-child(3) {
+  
+    transform: translateY(10px);
+}
+
+/* Крестик */
+
+.header.open .header__burger-btn span:nth-child(1) {
+    transform: translateY(0) rotate(45deg);
+    background-color: #ffff;
+}
+
+.header.open .header__burger-btn span:nth-child(2) {
+    opacity: 0;
+}
+
+.header.open .header__burger-btn span:nth-child(3) {
+    transform: translateY(0) rotate(-45deg);
+    background-color: #ffff;
+}
+
 
 .nav-list {
     display: flex;
@@ -115,7 +182,53 @@ html {
     width: 45%;
 }
 
+@media (max-width: 1265px) {
 
+    .header__burger-btn {
+        display: block;
+    }
+
+    .nav{
+        position: absolute;
+        right: -350px;
+        top: 0;
+        width: 350px;
+        padding: 45px 20px 20px 20px;
+        background-color: grey;
+        visibility: hidden;
+        transition: transform .5s, vasibility .5s;
+        will-change: transform;
+        
+    }
+
+     .nav-list {                           /*    menu-list! */
+        display: block;
+        margin: 22px 0;
+        padding-left: 20px;
+    
+    }            
+
+    .nav-link {                            /* menu-link*/
+        
+        font-size: 25px;
+        display: block;
+        padding: 5px;
+    }
+    
+    .header.open .nav{
+        transform: translate(-100%);
+        visibility: visible;
+    }
+
+    .section {
+    width: 100%
+    }
+
+    .nav-item {                     /* menu-item */
+        
+    }
+
+}             
 
 @media (max-width: 990px) {
     .section {
@@ -174,16 +287,16 @@ box-shadow: 0 5px 0 0 #4c1717;
 
 .my-contacts {
     text-decoration: none;
-      
-      color: #4d2323;
-      position: relative;
-      transition: color 0.3s, box-shadow 0.3s;
+    
+    color: #4d2323;
+    position: relative;
+    transition: color 0.3s, box-shadow 0.3s;
 }
 
 .my-contacts:hover {
     color: #510a0a;
     font-weight: bold;
-      text-shadow: 0 2px 4px rgba(5, 26, 37, 0.8);
+    text-shadow: 0 2px 4px rgba(5, 26, 37, 0.8);
 }
 /* Слайдер Swiper */
 
