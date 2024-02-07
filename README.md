@@ -1,3 +1,3 @@
 # MYCV
 
-https://veremeichik777.github.io/MYCV/
+https://veremeichik777.github.io/MYCV-RUSSIAN/
