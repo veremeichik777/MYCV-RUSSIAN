@@ -172,6 +172,10 @@ html {
     margin-top: 20px;
 }
 
+.section-list {
+    text-indent: 2em;
+}
+
 .section--update {
     padding-left: 100px;
 }
